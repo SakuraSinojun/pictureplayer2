@@ -48,7 +48,6 @@ public class MainActivity extends Activity {
 					Intent intent = new Intent(MainActivity.this,ShowActivity.class);
 					intent.putExtra("path", path);
 					startActivity(intent);
-					MainActivity.this.finish();
 				}
 			}
 		});

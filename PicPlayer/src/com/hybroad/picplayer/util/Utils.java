@@ -20,6 +20,12 @@ public class Utils {
 	public static final String LASTDIR_PATH = SD_PATH + "/picPlayer/lastdir.png";
 	public static String lastPath = null;//shang ji mu lu
 	
+	public static Bitmap getPicByPath(String path){
+		Bitmap bm = null;
+		bm = BitmapFactory.decodeFile(path);
+		return bm;
+	}
+	
 	public static List<Map<String, Object>> getData(String path){
 		List<Map<String, Object>> list = new ArrayList<Map<String,Object>>();
 		Map<String, Object> map = null;
@@ -78,6 +84,6 @@ public class Utils {
 	}
 
 	public static void showMessage(Context context, String text){
-		Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
+		Toast.makeText(context, text, Toast.LENGTH_LONG).show();
 	}
 }
